@@ -12,11 +12,18 @@ public class Problem1 {
         if (l2 == null) {
           return l1;
         }
-        curr = l3.value;
+        public int curr = l3.value;
         while (l1.next != null) {
-            l3.val = l1.val;
+            curr = l1.val;
             curr = l3.next.value;
         }
+        
+        while (l2.next != null) {
+            curr = l2.val;
+            curr = l3.next.value;
+        }
+        
+        
         return l3;
     }
 }
