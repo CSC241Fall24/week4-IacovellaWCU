@@ -9,7 +9,7 @@ public class Problem2 {
         if (position == 1) {
              l = new ListNode(val);
              l.next = new ListNode(head.val);
-            l_iterator = l.next;
+            l_iterator = l;
         } else {
             l = new ListNode(head.val);
             l.next = l_iterator;
