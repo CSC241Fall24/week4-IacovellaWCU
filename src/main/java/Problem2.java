@@ -24,7 +24,7 @@ public class Problem2 {
             l1_iterator = l1_iterator.next;
             i = i + 1;
         }
-        if (i != 1) {
+        if (position != 1) {
             l_iterator.next = new ListNode(val);
             l_iterator = l_iterator.next;
             l1_iterator = l1_iterator.next;
