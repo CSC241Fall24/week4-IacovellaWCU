@@ -32,7 +32,7 @@ public class Problem2 {
             l1_iterator = l1_iterator.next;
         }
         
-        while (l1_iterator.next != null) {
+        while (l1_iterator != null && l1_iterator.next != null) {
             l_iterator.next = new ListNode(l1_iterator.next.val);
             l_iterator = l_iterator.next;
             l1_iterator = l1_iterator.next;
