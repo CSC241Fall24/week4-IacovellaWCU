@@ -10,7 +10,7 @@ public class Problem2 {
             l = new ListNode(l1.val);
         }
 
-        i = 1;
+        int i = 1;
         ListNode l1_iterator = head.next;
         l_iterator = new ListNode(l1_iterator.val);
         l.next = l_iterator;
@@ -18,6 +18,7 @@ public class Problem2 {
             l_iterator.next = new ListNode(l1_iterator.next.val);
             l_iterator = l_iterator.next;
             l1_iterator = l1_iterator.next;
+            i = i + 1;
         }
         l_iterator.next = new ListNode(val);
         while (l1_iterator.next != null) {
