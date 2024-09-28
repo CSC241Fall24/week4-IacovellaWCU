@@ -11,9 +11,10 @@ public class Problem2 {
              l.next = new ListNode(head.val);
         } else {
             l = new ListNode(head.val);
+            l.next = l_iterator;
         }
         
-        l.next = l_iterator;
+       
         int i = 1;
 
         
