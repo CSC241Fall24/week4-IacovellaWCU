@@ -1,9 +1,32 @@
 
 public class Problem2 {
     public static ListNode insert(ListNode head, int val, int position) {
-        // TODO: Implement the insert method
-        // This method should insert a new node with the given value at the specified position
-        // If the position is out of bounds, insert the node at the end of the list
-        return null;
+      ListNode l = null;
+      ListNode l_iterator = null;
+
+        if (position = 0) {
+            l = new ListNode(l1.val);
+        } else {
+            l = new ListNode(l1.val);
+        }
+
+        i = 1;
+        ListNode l1_iterator = l1.next;
+        l_iterator = new ListNode(l1_iterator.val);
+        l.next = l_iterator;
+        while (i < position && l1_iterator.next != null) {
+            l_iterator.next = new ListNode(l1_iterator.next.val);
+            l_iterator = l_iterator.next;
+            l1_iterator = l1_iterator.next;
+        }
+        l_iterator.next = new ListNode(val);
+        while (l1_iterator.next != null) {
+            l_iterator.next = new ListNode(l1_iterator.next.val);
+            l_iterator = l_iterator.next;
+            l1_iterator = l1_iterator.next;
+        }
+      
+
+      return l;
     }
 }
