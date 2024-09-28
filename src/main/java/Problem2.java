@@ -9,7 +9,7 @@ public class Problem2 {
         if (position == 1) {
              l = new ListNode(val);
              l.next = new ListNode(head.val);
-            l_iterator = l;
+            l_iterator = l.next;
         } else {
             l = new ListNode(head.val);
             l.next = l_iterator;
@@ -20,7 +20,7 @@ public class Problem2 {
 
         
         
-        while (i < position - 1 && l1_iterator.next != null) {
+        while (i <= position - 1 && l1_iterator.next != null) {
             l_iterator.next = new ListNode(l1_iterator.next.val);
             l_iterator = l_iterator.next;
             l1_iterator = l1_iterator.next;
