@@ -15,7 +15,7 @@ public class Problem1 {
         // ListNode l3 = l1;
         // int curr = l3.val;
         while (l1.next != null) {
-            print(l1);
+            print(l1.val);
             curr = l1.val;
             curr = l3.next.val;
         }
