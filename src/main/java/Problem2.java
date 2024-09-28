@@ -11,7 +11,7 @@ public class Problem2 {
         }
 
         i = 1;
-        ListNode l1_iterator = l1.next;
+        ListNode l1_iterator = head.next;
         l_iterator = new ListNode(l1_iterator.val);
         l.next = l_iterator;
         while (i < position && l1_iterator.next != null) {
