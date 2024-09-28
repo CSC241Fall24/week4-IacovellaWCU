@@ -5,14 +5,14 @@ public class Problem1 {
         // This method should concatenate l2 to l1 and return l1
         // Remember to create new nodes instead of directly linking l1 to l2
         // Problem1.java
-        public ListNode l3 = null;
+        ListNode l3 = null;
         if (l1 == null) {
           return l2;
         }
         if (l2 == null) {
           return l1;
         }
-        public int curr = l3.value;
+        int curr = l3.value;
         while (l1.next != null) {
             curr = l1.val;
             curr = l3.next.value;
