@@ -12,15 +12,15 @@ public class Problem1 {
         if (l2 == null) {
           return l1;
         }
-        int curr = l3.value;
+        int curr = l3.val;
         while (l1.next != null) {
             curr = l1.val;
-            curr = l3.next.value;
+            curr = l3.next.val;
         }
         
         while (l2.next != null) {
             curr = l2.val;
-            curr = l3.next.value;
+            curr = l3.next.val;
         }
         
         
