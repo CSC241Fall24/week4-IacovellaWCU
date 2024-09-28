@@ -14,11 +14,11 @@ public class Problem2 {
         }
         
         l.next = l_iterator;
-        int i = 1;
+        int i = 0;
 
         
         
-        while (i < position && l1_iterator.next != null) {
+        while (i < position - 1 && l1_iterator.next != null) {
             l_iterator.next = new ListNode(l1_iterator.next.val);
             l_iterator = l_iterator.next;
             l1_iterator = l1_iterator.next;
