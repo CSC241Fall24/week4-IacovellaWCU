@@ -6,7 +6,7 @@ public class Problem2 {
 
         ListNode l1_iterator = head.next;
         l_iterator = new ListNode(l1_iterator.val);
-        if (position == 0) {
+        if (position == 1) {
              l = new ListNode(val);
              l.next = new ListNode(head.val);
         } else {
@@ -14,7 +14,7 @@ public class Problem2 {
         }
         
         l.next = l_iterator;
-        int i = 0;
+        int i = 2;
 
         
         
@@ -24,7 +24,7 @@ public class Problem2 {
             l1_iterator = l1_iterator.next;
             i = i + 1;
         }
-        if (i != 0) {
+        if (i != 1) {
             l_iterator.next = new ListNode(val);
         }
         
