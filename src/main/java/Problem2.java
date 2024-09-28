@@ -14,7 +14,7 @@ public class Problem2 {
         }
         
         l.next = l_iterator;
-        int i = 2;
+        int i = 1;
 
         
         
