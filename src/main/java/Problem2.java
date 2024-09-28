@@ -5,9 +5,9 @@ public class Problem2 {
       ListNode l_iterator = null;
 
         if (position == 0) {
-            l = new ListNode(l1.val);
+            l = new ListNode(val);
         } else {
-            l = new ListNode(l1.val);
+            l = new ListNode(head.val);
         }
 
         int i = 1;
